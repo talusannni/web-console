@@ -53,7 +53,6 @@
           {% include 'forms/field.html' with field=form.entity_name %}
 
           {# T1 means ON C is OFF #}
-          {% if allow_regex == 'T1' %}
 
             <div class="alert alert-info">
               {% blocktrans %}You can now set an entity as a regular expression,
@@ -68,7 +67,6 @@
               </div>
             </div>
 
-          {% endif %}
 
 
           {% include 'forms/field.html' with field=form.entity_values %}
